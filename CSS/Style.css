@@ -1,0 +1,80 @@
+:root {
+  --color: antiquewhite;
+  --background: slateblue;
+  --body: aliceblue;
+  --start: #27ae60;
+  --stop: #c0392b;
+  --reset: #7f8c8d;
+  --text: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  gap: 20px;
+  display: flex;
+  padding: 100px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--color);
+  background: var(--body);
+
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.box {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 20px;
+  border-radius: 15px;
+
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background: var(--background);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+}
+
+label {
+  width: 100%;
+
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  background: var(--body);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  border: 2px solid var(--text);
+}
+
+span {
+  font-size: 20px;
+}
